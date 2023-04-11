@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { data } from '../../data';
+// import { data } from '../../data';
 
-const UserAdd = () => {
+const UserChallenge = () => {
   const [name, setName] = useState('');
-  const [users, setUsers] = useState(data);
+  const [users, setUsers] = useState([]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -57,4 +57,4 @@ const UserAdd = () => {
     </div>
   );
 };
-export default UserAdd;
+export default UserChallenge;
